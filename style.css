@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-color: #2b2d33;
+  top: 0;
+  width: 100%;
+  position: fixed;
+}
+
+nav {
+  display: flex;
+  padding: 25px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  transition: 0.4s;
+  color: #f75023;
+  border-bottom: 1px solid #f75023;
+}
+
+.section1 {
+  padding-top: 100px;
+  background-color: #3e4454;
+  height: 100vh;
+}
+
+.main1 {
+  font-weight: 400;
+  display: flex;
+  color: #b9b5c9;
+  margin: 0 13% 0 13%;
+  font-size: 21px;
+  align-items: center;
+}
+
+.nama {
+  color: orangered;
+  font-size: 42px;
+  margin: 15px 0 7px 0;
+}
+
+.intro {
+  margin-bottom: 20px;
+}
+.tier {
+  color: #adff2f;
+}
+
+.from {
+  color: rgb(231, 204, 0);
+}
+
+.intro-full {
+  margin: 20px 0 20px 0;
+  font-size: 15px;
+}
+
+.main1 .about-btn {
+  color: white;
+  background-color: #f75023;
+  padding: 15px 40px 15px 40px;
+  border-radius: 50px;
+  font-size: 17px;
+  border: none;
+  text-decoration: none;
+}
+
+.main1 .about-btn:hover {
+  background-color: #2b2d33;
+  border: 1px solid #f75023;
+  transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+  header nav ul {
+    text-align: center;
+  }
+  .main1 {
+    flex-direction: column;
+  }
+  .main1 img {
+    padding-top: 20px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .section1 {
+    height: 115vh;
+  }
+}
+/* section 2 ================= */
+
+.section2 {
+  background-color: #2b2d33;
+  height: 100vh;
+}
+
+.section2 .nama {
+  color: #f75023;
+}
+
+.section2 .intro-full .fs {
+  color: #adff2f;
+}
+
+#contact:hover {
+  background-color: #2b2d33;
+}
+
+/* project */
+.portofolio {
+  background-color: #3e4454;
+  padding: 100px 0 100px 0;
+}
+
+.portofolio h1 {
+  color: #f75023;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  background-color: #3e4454;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  max-width: 250px;
+  height: 200px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #888;
+}
+
+.card a {
+  color: white;
+  text-decoration: none;
+}
+
+.card:hover {
+  color: wheat;
+  background-color: #2b2d33;
+  transition: 0.3s;
+}
+
+.card a:hover {
+  border-bottom: 1px solid #f75023;
+  color: #f75023;
+  transition: 0.4s;
+}
+
+/* blog */
+.blog {
+  background-color: #2b2d33;
+  padding: 80px 0 80px 0;
+  color: white;
+}
+.blog-card {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.blog-card p {
+  color: #f75023;
+}
+
+.card-main img {
+  border-radius: 15px;
+  max-width: 300px;
+  height: 200px;
+}
+
+.card-main img:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+/* contact */
+
+.contact {
+  background-color: #3e4454;
+  padding: 50px 13% 50px 13%;
+}
+
+.displaykan {
+  display: flex;
+  align-items: center;
+}
+
+.contact h1 {
+  text-align: center;
+  color: #f75023;
+}
+
+.contact-menu p {
+  color: #888;
+  text-align: center;
+}
+.address {
+  padding: 50px 0 0 0;
+}
+.address-menu {
+  align-items: center;
+  display: flex;
+  padding: 0 0 30px 0;
+}
+
+.address-menu i {
+  padding-right: 30px;
+}
+
+.address-menu p {
+  color: white;
+}
+
+.send-contact {
+  padding: 0 0 0 25%;
+}
+
+.send-contact input {
+  padding: 10px;
+  margin-bottom: 5px;
+  width: 350px;
+  background-color: #b9b5c9;
+  color: white;
+}
+
+.send-contact #katakan {
+  height: 70px;
+}
+
+#kirim {
+  color: white;
+  background-color: hsl(13, 93%, 55%);
+  border-radius: 50px;
+  font-size: 17px;
+  border: none;
+  text-decoration: none;
+  width: 100px;
+  text-align: center;
+}
+
+#kirim:hover {
+  background-color: #3e4454;
+  border: 1px solid #fff;
+  transition: 0.3s;
+}
+
+/* footer */
+
+.footer {
+  background-color: #2b2d33;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  bottom: 0;
+}
